@@ -35,7 +35,7 @@ Evaluation protocol: 100-item sampling (1 true positive + 99 random negatives), 
 | `page_visit.parquet` | ✗ | Dropped — URL space ≠ SKU space |
 | `remove_from_cart.parquet` | ✗ | Not used |
 | `search_query.parquet` | ✗ | Not used |
-| `product_properties.parquet` | ✗ | Reserved for Phase 3 extension |
+
 
 **Dataset statistics after preprocessing:**
 
@@ -103,7 +103,7 @@ MixRec consists of three main components:
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/mixrec-synerise.git
+git clone https://github.com/SarahAlhalees/mixrec-synerise.git
 cd mixrec-synerise
 ```
 
@@ -119,21 +119,21 @@ Download the `.parquet` files from [recsys.synerise.com](https://recsys.synerise
 
 ### 4. Run preprocessing
 
-Open and run `notebooks/01_preprocessing.ipynb`. This produces the `.pkl` files in `Datasets/synerise/`.
+Open and run `notebooks/synrise_dataset_preprocessing.ipynb`. This produces the `.pkl` files in `Datasets/`.
 
 Update `DATA_DIR` in the notebook to point to your `raw/` folder:
 
 ```python
 DATA_DIR = 'raw/'
-OUT_DIR  = 'Datasets/synerise/'
+OUT_DIR  = 'Datasets/'
 ```
 
 ### 5. Train the model
 
-Open and run `notebooks/02_mixrec_model.ipynb`. Update `data_path` in Cell 2:
+Open and run `notebooks/mixrec_synerise.ipynb`. Update `data_path` in Cell 2:
 
 ```python
-data_path = 'Datasets/synerise'
+data_path = 'Datasets/'
 ```
 
 ---
