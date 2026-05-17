@@ -83,8 +83,8 @@ MixRec consists of three main components:
 ```
 .
 ├── notebooks/
-│   ├── 01_preprocessing.ipynb   # SYNERISE → .pkl sparse matrices
-│   └── 02_mixrec_model.ipynb    # PyTorch model, training, evaluation, tuning
+│   ├── synerise-dataset-preprocessing.ipynb   # SYNERISE → .pkl sparse matrices
+│   └── mixrec-synerise.ipynb    # PyTorch model, training, evaluation, tuning
 ├── Datasets/
 │   └── synerise/
 │       ├── trn_Cart.pkl         # scipy CSR sparse matrix (cart, train)
